@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const bodyParser = require("body-parser");
 const PropertyModel = require("../models/PropertyModels");
 
 // This the route to add a new property
