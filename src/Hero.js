@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Link as ReactLink} from 'react-router-dom';
 
 const theme = createTheme(
   {
@@ -44,12 +45,10 @@ export default function Hero() {
               align="center"
               gutterBottom
             >
-              Hero layout
+              PLACEHOLDER
             </Typography>
             <Typography variant="h5" align="center" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
+            Since 2015, Placeholder has been focused on bringing our customers the best in esteem and quality staycation plans.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -57,8 +56,8 @@ export default function Hero() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained" sx={{color: '#594545'}}>Login</Button>
-              <Button variant="outlined">Sign Up</Button>
+              <Button component={ReactLink} to={"/about"} variant="contained" sx={{color: '#594545'}}>About Us</Button>
+              {/* <Button variant="outlined">Sign Up</Button> */}
             </Stack>
           </Container>
           {/* <div class="col-6 heroImage">
